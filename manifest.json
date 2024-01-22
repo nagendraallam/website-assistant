@@ -1,13 +1,10 @@
 {
-    // Comments are accepted in the manifest, even though it is JSON.
     "manifest_version": 3,
-    "name": "Chrome Extension v3 Starter",
-    "description": "A minimal example of a chrome extension using manifest v3",
+    "name": "Website AI Assistant",
+    "description": "Have an AI assistant help you with any website you visit. Just click the extension icon and ask your question.",
     "version": "0.0.1",
     "icons": {
-        "16": "logo/logo-16.png",
-        "48": "logo/logo-48.png",
-        "128": "logo/logo-128.png"
+        "64": "logo/icon.png"
     },
     "options_page": "settings/settings.html",
     "action": {
@@ -21,8 +18,14 @@
     "background": {
         "service_worker": "service-worker.js"
     },
-    "content_scripts": [{
-        "js": ["foreground.js"],
-        "matches": ["https://github.com/*"]
-    }]
+    "content_scripts": [
+        {
+            "js": [
+                "foreground.js"
+            ],
+            "matches": [
+                "https://github.com/*"
+            ]
+        }
+    ]
 }

@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
     <title>Chrome Addon v3: popup</title>
 </head>
+
 <body>
-    This is the <span class="special-text">HTML</span> body of the addon.
+    <div class="flex flex-col">
+
+        <h1>Chrome Addon v3: popup</h1>
+        <!-- // simple form to ask a question -->
+        <h2>Ask your question below!</h2>
+        <input type="text" />
+        <button>Ask</button>
+
+        <!-- // this div returns the response from the server -->
+        <div class="hidden">
+            <h3>Response : </h3>
+            <p>Response from the server</p>
+        </div>
+    </div>
 </body>
+
 </html>
